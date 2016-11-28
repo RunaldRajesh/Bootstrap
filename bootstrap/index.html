@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<title>Play Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+	<link href="includes/css/styles.css" rel="stylesheet">
+
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+</head>
+
+<body>
+	<div class="container" id="main">
+		<div class="navbar navbar-fixed-top" id="menu">
+			<div class="container">
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="images/logoo.png"></a>
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#" id="home"><span class="glyphicon glyphicon-home"></span>Home</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="service">Services<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Latest Releases</a>
+								</li>
+								<li>
+									<a href="#">Upcoming Games</a>
+								</li>
+								<li>
+									<a href="#">Play Free Games</a>
+								</li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Featured Platform</li>
+								<li>
+									<a href="#">PC Games</a>
+								</li>
+								<li>
+									<a href="#">Xbox Games</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="genre">Genre<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Shooting</a>
+								</li>
+								<li>
+									<a href="#">Horror</a>
+								</li>
+								<li>
+									<a href="#">Sports</a>
+								</li>
+								<li>
+									<a href="#">Racing</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#" id="help">Help</a>
+						</li>
+
+					</ul><!--nav end-->
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="search for games" id="searchinp">
+						<button type="button" class="btn btn-default" id="searchbtn"><span class="glyphicon glyphicon-search"></span></button>
+					</form>
+
+					<ul class="nav navbar-nav pull-right">
+						<li class="dropdown" >
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="profile"><span class="glyphicon glyphicon-user" >MyProfile<strong class="caret"></strong></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href=""><span class="glyphicon glyphicon-wrench"></span>settings</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-gift"></span>Reward points</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-refresh"></span>Check for Updates</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-off"></span>sign out</a>
+								</li>
+							</ul>
+						</li>	
+					</ul><!--nav end-->
+				</div><!--nav collapse end-->
+			</div><!--end container-->
+		</div><!--navbar end-->
+
+		<div class="carousel slide" id="myCarousel">
+
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-slide-to="1" data-target="#myCarousel"></li>
+				<li data-slide-to="2" data-target="#myCarousel"></li>
+			</ol>
+
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+					<div class="carousel-caption" id="text1">
+						<h4>Releasing on  December 20</h4>
+						<p>Get ready for the Battle</p>
+					</div><!-- end carousel-caption-->
+				</div><!-- end item -->
+
+				<div class="item" id="slide2">
+					<div class="carousel-caption" id="text2">
+						<h4>Releasing on December 25</h4>
+						<p>Keep your snipers ready</p>
+					</div><!-- end carousel-caption-->
+				</div><!-- end item -->
+
+				<div class="item" id="slide3">
+					<div class="carousel-caption" id="text3">
+						<h4>Releasing on December 30</h4>
+						<p>Excited for the action</p>
+					</div><!-- end carousel-caption-->
+				</div><!-- end item -->
+			</div><!--end carousel-inner -->
+
+			<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+
+		</div><!--end carousel-->
+
+
+		<div class="row" id="bigCallout">
+			<div class="col-12">
+				<div class="alert alert-success alert-block fade-in" id="successAlert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<h4>success</h4>
+					<p>you have subcribed for one month</p>
+				</div><!--alert end-->
+				<div class="well well-small visible-sm">
+					<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span>Make a call</a>
+				</div><!--well end-->
+				<div class="well">
+					<div class="page-header">
+						<h1>Subscribe for one month free <small>Its only for a limited period</small></h1>
+					</div>
+					<p class="lead">It is free for the subscribed user with limited package</p>
+					<a href="" class="btn btn-primary" id="alertme">subscribe</a>
+					<a href="template/form.html" class="btn btn-link"> or trial free</a>
+				</div><!--well end-->
+			</div><!--end col-12-->
+		</div><!--end row-->
+
+		<div class="row" id="featureheading">
+			<div class="col-12">
+				<h1>Popular Games</h1>
+				<p class="lead">Highest Rated Games </p>
+			</div>
+		</div><!--end row-->
+
+		<div class="row" id="features">
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">FIFA 15</h3>
+					</div>	
+					<img src="images/badge3.jpg" class="img-circle">		
+					<p>FIFA 15 is an association football simulation video game developed by EA Canada and published by Electronic Arts. It was released on 23 September 2014 in North America, 25 September in Europe and 26 September in the United Kingdom and Ireland[4] for the PlayStation 3, PlayStation 4, PlayStation Vita, Nintendo 3DS, Wii, Xbox One, Xbox 360, Microsoft Windows, iOS, Android and Windows Phone.[5] On PC for the first time, FIFA 15 runs on EA’s Ignite engine with the same features as the PlayStation 4 and Xbox One editions.</p>
+					<a href="https://fifa-15.en.softonic.com/" class="btn btn-success btn-block">Download</a>	
+				</div><!--end panel-->
+			</div><!--end col-sm-4-->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">NEED FOR SPEED</h3>
+					</div>	
+					<img src="images/badge4.jpg" class="img-circle">		
+					<p>Need for Speed, also known by its initials NFS, is a racing video game franchise published by Electronic Arts and developed by several studios including EA Black Box, Criterion Games and Ghost Games.The series released its first title, The Need for Speed in 1994. The title comes from a famous quote from the 1986 film Top Gun. All installments of the series consist of racing cars on various tracks, with several titles including police pursuits in races. Since Need for Speed: High Stakes, the series has also integrated car body customization into gameplay.</p>
+					<a href="#" class="btn btn-success btn-block">Download</a>	
+				</div><!--end panel-->
+			</div><!--end col-sm-4-->
+
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">THIEF</h3>
+					</div>	
+					<img src="images/badge5.png" class="img-circle">		
+					<p>Thief is a stealth video game developed by Eidos Montreal, published by Square Enix, and released in February 2014 for the PlayStation 3, PlayStation 4, Xbox 360, Xbox One and Microsoft Windows video gaming platforms. It is a revival of the cult classic Thief video game series of which it is the fourth installment. Initially announced in 2009 as Thief 4, it was later announced in 2013 that the game is a reboot for the series.The game is set in 'The City', a dark fantasy world inspired by Victorian, Gothic, and steampunk aesthetics. </p>
+					<a href="#" class="btn btn-success btn-block">Download</a>	
+				</div><!--end panel-->
+			</div><!--end col-sm-4-->
+		</div><!--end row-->
+
+		<div class="row" id="latest">
+			<div class="col-12">
+				<h3>Latest Games</h3>
+				<div class="thumbnails row">
+					<div class="col-3">
+						<div class="thumbnail">
+							<img src="images/re.jpg">
+							<div class="caption">
+								<h3>Resident Evil</h3>
+								<a href="https://en.wikipedia.org/wiki/Resident_Evil_6" class="btn btn-primary btn-block" target="_blank">view</a>
+							</div>
+						</div>
+					</div><!--end col-3-->
+
+					<div class="col-3">
+						<div class="thumbnail">
+							<img src="images/pop.jpg">
+							<div class="caption">
+								<h3>Prince of Persia</h3>
+								<a href="https://en.wikipedia.org/wiki/Prince_of_Persia" class="btn btn-primary btn-block" target="_blank">view</a> 
+							</div>
+						</div>
+					</div><!--end col-3-->
+
+					<div class="col-3">
+						<div class="thumbnail">
+							<img src="images/witcher.jpg">
+							<div class="caption">
+								<h3>The Witcher</h3>
+								<a href="https://en.wikipedia.org/wiki/The_Witcher" class="btn btn-primary btn-block" target="_blank">view</a>
+							</div>
+						</div>
+					</div><!--end col-3-->
+
+					<div class="col-3">
+						<div class="thumbnail">
+							<img src="images/f4.jpg">
+							<div class="caption">
+								<h3>Farcry</h3>
+								<a href="https://en.wikipedia.org/wiki/Far_Cry" class="btn btn-primary btn-block" target="_blank">view</a> 
+							</div>
+						</div>
+					</div><!--end col-3-->
+
+				</div><!--thumbnails row-->
+			</div><!--end col-12-->
+		</div><!--end row-->
+
+		<div class="row" id="info">
+			<div class="col-sm-6">
+				<h3>More Details</h3>
+				<div class="tabbable">
+					<ul class="nav nav-tabs" id="tab">
+						<li class="active"><a href="#tab1" data-toggle="tab" class="loc">Location</a>
+						</li>
+						<li><a href="#tab2" data-toggle="tab" class="loc">Information</a>
+						</li>
+					</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<h4 ><span class="glyphicon glyphicon-map-marker"></span>Our location <small style="color:#eee;">catch us all over the world</small></h4>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0227666069122!2d77.6436993143737!3d12.84180529094114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6b7bb198c9b5%3A0x2c38088be4f8efb4!2sGame+Pro!5e0!3m2!1sen!2sin!4v1480232678198" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+							<p>A game is structured form of play, usually undertaken for enjoyment and sometimes used as an educational tool.[1] Games are distinct from work, which is usually carried out for remuneration, and from art, which is more often an expression of aesthetic or ideological elements. However, the distinction is not clear-cut, and many games are also considered to be work (such as professional players of spectator sports or games) or art (such as jigsaw puzzles or games involving an artistic layout such as Mahjong, solitaire, or some video games).</p>
+							<p>Key components of games are goals, rules, challenge, and interaction. Games generally involve mental or physical stimulation, and often both. Many games help develop practical skills, serve as a form of exercise, or otherwise perform an educational, simulational, or psychological role.</p>
+							<p>Ludwig Wittgenstein was probably the first academic philosopher to address the definition of the word game. In his Philosophical Investigations,[5] Wittgenstein argued that the elements of games, such as play, rules, and competition, all fail to adequately define what games are. From this, Wittgenstein concluded that people apply the term game to a range of disparate human activities that bear to one another only what one might call family resemblances. As the following game definitions show, this conclusion was not a final one and today many philosophers, like Thomas Hurka, think that Wittgenstein was wrong and that Bernard Suits' definition is a good answer to the problem</p>
+						</div><!--end tab-pane-->
+
+						<div class="tab-pane" id="tab2">
+							<h4>3D Games <small style="color:#eee;">makes you to feel real</small></h4>
+							<img src="images/3d.jpg" class="thumbnail pull-left">
+							<p>Since the 1980s, video gaming has become a popular form of entertainment and a part of modern culture in most parts of the world. One of the early games was Spacewar!, which was developed by computer scientists. Early arcade video games developed from 1972 to 1978.Hailed as the granddaddy of the FPS, Wolfenstein 3D from id Software built on the developer's previous work to unleash the single-player FPS on the world. Buoyed by Wolfenstein's success, id released Doom in 1993, setting a new standard and establishing a design template that would be referenced for many years to come.This was an early inspiration for the D-Pad, which was used on many future console controllers, as well, of course, as the GameBoy. 3D Monster Maze was the first ever game released on a commercial games machine that was in 3D. It was developed by Malcolm Evans in 1981 for the Sinclair ZX81 platform. Wolfenstein 3D from id Software built on the developer's previous work to unleash the single-player FPS on the world. Buoyed by Wolfenstein's success, id released Doom in 1993, setting a new standard and establishing a design template that would be referenced for many years to come</p>
+							<hr>
+							<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>click here</a>
+
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Get the updates</h4>
+										</div><!--end modal header-->
+
+										<div class="modal-body">
+											<p><small class="text-muted">Fill the details</small></p>
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Name</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputName"  placeholder="Name" type="text"></input>
+													</div>
+												</div><!--end form group-->
+
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputEmail" placeholder="Email" type="email"></input>
+													</div>
+												</div><!--end form group-->
+
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputphone">Phone</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputPhone"  placeholder="Phonenumber" type="text"></input>
+													</div>
+												</div><!--end form group-->
+
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+													<div class="col-lg-10">
+														<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3">
+														</textarea>
+														<button class="btn btn-success pull-right" type="submit">send</button>
+													</div>
+												</div><!--end form group-->
+
+											</form><!--end form-horizontal-->
+
+										</div><!-- end modal body -->
+
+										<div class="modal-footer">
+											<button class="btn btn-default" data-dismiss="modal" type="button">close</button> <button class="btn btn-primary"  type="button">save changes</button>
+										</div> <!-- end modal footer -->
+									</div><!-- end modal content -->
+								</div><!-- end modal dialog -->
+							</div><!-- end modal -->
+
+						</div><!-- end tab pane -->
+					</div><!-- end tab content -->
+				</div><!-- end tabbable -->
+			</div><!-- end col-sm-6 -->
+
+			<div class="col-sm-6">
+				<h3>Virtual Reality</h3>
+				<p>Virtual reality (VR) typically refers to computer technologies that use software to generate realistic images, sounds and other sensations that replicate a real environment (or create an imaginary setting), and simulate a user's physical presence in this environment, by enabling the user to interact with this space and any objects depicted therein using specialized display screens or projectors and other devices. VR has been defined as "...a realistic and immersive simulation of a three-dimensional environment, created using interactive software and hardware, and experienced or controlled by movement of the body"[1] or as an "immersive, interactive experience generated by a computer".[2] A person using virtual reality equipment is typically able to "look around" the artificial world, move about in it and interact with features or items that are depicted on a screen or in goggles.</p>
+				<h4>Related Games</h4>
+
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Robinson:The Journey</h4>
+						<p class="list-group-item-text">PlayStation VR, known by the codename Project Morpheus during development, is a virtual reality gaming head-mounted display developed by Sony Interactive Entertainment and manufactured by Sony, scheduled to launch in October 2016. It is designed to be fully functional with the PlayStation 4 home video game console</p>
+					</a>
+
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">The London Heist</h4>
+						<p class="list-group-item-text">PlayStation VR, previously known by the codename Project Morpheus, is an upcoming virtual reality head-mounted display produced by Sony Computer Entertainment. It is designed to be fully functional with the PlayStation 4 video game system.
+						</p>
+					</a>
+
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">The climb</h4>
+						<p class="list-group-item-text">When it comes to consoles, PlayStation have project "Morpheus", which is developing a VR headset for the PS4. And apparently, Microsoft have teamed up with oculus to bring a new VR headset for the XBox One. But, as of now, there is no oculus rift for anything other than PC.</p>
+					</a>
+				</div><!-- end list group -->
+				<h5>Play station</h5>
+				<p>PlayStation VR, known by the codename Project Morpheus during development, is a virtual reality head-mounted display developed by Sony Interactive Entertainment,[2] which launched on October 13, 2016.It was designed to be fully functional with the PlayStation 4 home video game console. In certain games and demos for the VR, the player wearing the headset acts separately from other players without the headset. The PlayStation VR system can output a picture to both the PlayStation VR headset and a television simultaneously, with the television either mirroring the picture displayed on the headset, or displaying a separate image for competitive or cooperative gameplay. PlayStation VR works with either the standard DualShock 4 controller or the PlayStation Move controllers</p>
+			</div><!-- end col-sm-6 -->
+		</div><!-- end row -->
+
+		<hr>
+
+		<div class="row" id="course">
+			<div class="col-12">
+				<h3>Top games</h3>
+				<div class="thumbnails row">
+					<div class="col-3">
+						<div class="thumbnail">
+							<img src="images/badge1.jpg">
+							<div class="label label-success price">
+								<span class="glyphicon glyphicon-tag"></span> <sup>$</sup>300
+							</div>
+							<div class="caption">
+								<h3>Mad max</h3>
+								<p>It is a adventures game which takes you to a another level</p>
+
+								<p><a href="" class="btn btn-primary btn-small">Get it</a> <a href="" class="btn btn-small btn-link">learn more</a></p>
+							</div>
+						</div>
+					</div><!-- end col-3 -->
+
+					<div class="col-3">
+						<div class="thumbnail">
+							<img src="images/badge6.jpg">
+							<div class="label label-success price">
+								<span class="glyphicon glyphicon-tag"></span> <sup>$</sup>100
+							</div>
+							<div class="caption">
+								<h3>Assassin's creed</h3>
+								<p>It is a fighting game makes you feel real</p>
+
+								<p><a href="" class="btn btn-primary btn-small">Get it</a> <a href="" class="btn btn-small btn-link">learn more</a></p>
+							</div>
+						</div>
+					</div><!-- end col-3 -->
+
+					<div class="col-3">
+						<div class="thumbnail">
+							<img src="images/badge7.jpg">
+							<div class="label label-info price">
+								<span class="glyphicon glyphicon-tag"></span>Free
+							</div>
+							<div class="caption">
+								<h3>Battlefield</h3>
+								<p>Its a shooting game which would eat your imagination</p>
+
+								<p><a href="" class="btn btn-primary btn-small">Get it</a> <a href="" class="btn btn-small btn-link">learn more</a></p>
+							</div>
+						</div>
+					</div><!-- end col-3 -->
+
+					<div class="col-3">
+						<div class="thumbnail">
+							<img src="images/badge2.jpg">
+							<div class="label label-info price">
+								<span class="glyphicon glyphicon-tag"></span>Free
+							</div>
+							<div class="caption">
+								<h3>GTA</h3>
+								<p>Its a game where you can feel relaxed and feel good</p>
+								<p><a href="" class="btn btn-primary btn-small">Get it</a> <a href="" class="btn btn-small btn-link">learn more</a></p>
+							</div>
+						</div>
+					</div>
+
+				</div><!-- end thumbnails row -->
+			</div><!-- end col-12 -->
+		</div><!-- end row -->
+
+	</div><!-- end container -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>Copyright &copy;RUNALD</h6>
+				</div>
+
+				<div class="col-sm-4">
+					<h6>About Us</h6>
+					<p>PlayGames is the largest online games site in the US. We reach over 10 million unique users every month (comScore). We are trailblazers in the casual game territory, developing and distributing innovative, irreverent, addictive online games.PlayGame players know what they like. We make it easy for them to tell us, with reviews, ratings, favorites, and uploads.</p>
+				</div>
+
+				<div class="col-sm-2">
+					<h6>Navigation</h6>
+					<ul class="unstyled">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-2">
+					<h6>Follow Us</h6>
+					<ul class="unstyled">
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Google plus</a></li>
+					</ul>
+				</div>
+
+			</div><!--end row-->
+		</div><!--end container-->
+	</footer>
+
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="includes/js/script.js"></script>
+
+</body>
+</html>
+
